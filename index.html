@@ -1,1 +1,97 @@
-test
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自己紹介コレクション</title>
+    <style>
+      :root {
+        --bg: #f4f7ff;
+        --card: #ffffff;
+        --text: #1f2a44;
+        --sub: #5a6788;
+        --accent: #5d6bff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        color: var(--text);
+        background: linear-gradient(160deg, #eef2ff, var(--bg));
+        min-height: 100vh;
+        padding: 28px;
+      }
+      .wrap { max-width: 980px; margin: 0 auto; }
+      h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+      .lead { margin: 0 0 26px; color: var(--sub); }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 18px;
+        box-shadow: 0 12px 32px rgba(40, 60, 120, 0.12);
+      }
+      .name { font-size: 1.2rem; margin: 6px 0 4px; }
+      .kana { color: var(--sub); font-size: 0.95rem; margin-bottom: 12px; }
+      .tag {
+        display: inline-block;
+        background: #ecf0ff;
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 0.78rem;
+      }
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: var(--accent);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>自己紹介コレクション</h1>
+      <p class="lead">紹介ページを増やしたバージョンです。気になる人をクリックしてください（全4人）。</p>
+
+      <section class="grid">
+        <article class="card">
+          <span class="tag">No.1</span>
+          <h2 class="name">中山 世羅</h2>
+          <p class="kana">なかやま せいら</p>
+          <p>のんびり系で、好奇心多めなタイプ。</p>
+          <a href="seira.html">ページを見る →</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">No.2</span>
+          <h2 class="name">朝倉 遼</h2>
+          <p class="kana">あさくら りょう</p>
+          <p>ゲームとガジェットが好きな研究肌。</p>
+          <a href="ryo.html">ページを見る →</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">No.3</span>
+          <h2 class="name">桐谷 澪</h2>
+          <p class="kana">きりたに みお</p>
+          <p>散歩と読書が落ち着くインドア派。</p>
+          <a href="mio.html">ページを見る →</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">No.4</span>
+          <h2 class="name">高瀬 陽向</h2>
+          <p class="kana">たかせ ひなた</p>
+          <p>運動好きで元気なムードメーカー。</p>
+          <a href="hinata.html">ページを見る →</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
